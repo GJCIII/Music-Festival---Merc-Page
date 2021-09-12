@@ -1,0 +1,62 @@
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20px;
+  text-align: center;
+  font-family: "Lobster", cursive;
+  font-size: 10pt;
+  color: rgb(83, 81, 81);
+}
+z
+
+hr {
+  border: solid purple;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: start;
+}
+
+html {
+  /* body won't work ¯\_(ツ)_/¯ */
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  padding-top: 100px;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.sec1 {
+  border: solid blue;
+  background-image: url(/img/194546.jpg);
+  background-size: cover;
+  color: seashell;
+  font-family: "Lobster", cursive;
+}
+
+.sec2 {
+  border: solid red;
+  background-image: url(/img/avengers\ band.jpg);
+  background-size: cover;
+  color: seashell;
+  font-family: "Lobster", cursive;
+}
+
+.sec3 {
+    background-image: url(/img/BB29-FEA-Metallica-6yh-2016-billboard-1500-compressed.jpg);
+    background-size: cover;
+  color: seashell;
+  font-family: "Lobster", cursive;
+}
+
+img {
+    width: 100%;
+    height: auto;
+  }
