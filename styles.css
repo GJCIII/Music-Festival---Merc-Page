@@ -1,7 +1,7 @@
 header {
   position: -webkit-sticky;
   position: sticky;
-  top: 20px;
+  top: 10px;
   text-align: center;
   font-family: "Lobster", cursive;
   font-size: 10pt;
@@ -73,4 +73,46 @@ img {
   to {
     text-shadow: 0 0 20px green, 0 0 90px blue, 0 0 4px #CDECF3, 0 0 50px #fdffa2, 0 0 60px #CDECF3, 0 0 7px #fdffa2, 0 0 8px red;
   }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(/img/gorillaeyes.jpg);
+ opacity: 90%;
+  overflow-x: hidden;
+  transition: 1s;
+  text-align:right;
+  
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  border-spacing: 10px;
+  font-size: 40pt;
+  color: #fdffa2;
+  display: block;
+  transition: 0.3s;
+
+
+.sidenav a:hover{
+  color: #53BDD5;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
