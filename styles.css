@@ -5,12 +5,11 @@ header {
   text-align: center;
   font-family: "Lobster", cursive;
   font-size: 10pt;
-  color: rgb(83, 81, 81);
+  color: #fdffa2;
 }
-z
 
 hr {
-  border: solid purple;
+  border: inset #fdffa2;
 }
 
 .container {
@@ -34,29 +33,44 @@ section {
 }
 
 .sec1 {
-  border: solid blue;
-  background-image: url(/img/194546.jpg);
+  background-image: url(/img/Coheed.jpg);
   background-size: cover;
-  color: seashell;
+  color: #fdffa2;
   font-family: "Lobster", cursive;
 }
 
 .sec2 {
-  border: solid red;
-  background-image: url(/img/avengers\ band.jpg);
+
+  background-image: url(/img/avengersband.jpg);
   background-size: cover;
-  color: seashell;
+  color: #fdffa2;
   font-family: "Lobster", cursive;
 }
 
 .sec3 {
-    background-image: url(/img/BB29-FEA-Metallica-6yh-2016-billboard-1500-compressed.jpg);
-    background-size: cover;
-  color: seashell;
+  background-image: url(/img/metalicanotext.jpg);
+  background-size: cover;
+  color: #fdffa2;
   font-family: "Lobster", cursive;
 }
 
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
+}
+
+
+.glow {
+  color: #fdffa2;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow, 0 0 90px red, 0 0 3px #CDECF3, 0 0 40px #CDECF3, 0 0 50px #CDECF3, 0 0 60px #CDECF3, 0 0 70px blue;
   }
+  
+  to {
+    text-shadow: 0 0 20px green, 0 0 90px blue, 0 0 4px #CDECF3, 0 0 50px #fdffa2, 0 0 60px #CDECF3, 0 0 7px #fdffa2, 0 0 8px red;
+  }
+}
