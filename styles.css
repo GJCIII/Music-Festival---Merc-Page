@@ -2,7 +2,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 10px;
-  text-align: center;
+
   font-family: "Lobster", cursive;
   font-size: 10pt;
   color: #fdffa2;
@@ -10,6 +10,10 @@ header {
 
 hr {
   border: inset #fdffa2;
+}
+
+h1 {
+  text-align: center;
 }
 
 .container {
@@ -91,7 +95,7 @@ img {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 0px;
   border-spacing: 10px;
   font-size: 40pt;
   color: #fdffa2;

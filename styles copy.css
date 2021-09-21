@@ -1,0 +1,123 @@
+.jumbotron{
+  /* position: -webkit-sticky;
+  position: sticky; */
+  position: fixed;
+  top: 10px;
+  font-family: "Lobster", cursive;
+  font-size: 10pt;
+  /* color: #fdffa2; */
+  color: black;
+}
+
+hr {
+  border: inset #fdffa2;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+}
+
+.child {
+  scroll-snap-align: start;
+}
+
+html {
+  /* body won't work ¯\_(ツ)_/¯ */
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  padding-top: 100px;
+  height: 100vh;
+  width: 100vw;
+  scroll-snap-align: start;
+}
+
+.sec1 {
+  background-image: url(/img/Coheed.jpg);
+  background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
+}
+
+.sec2 {
+
+  background-image: url(/img/avengersband.jpg);
+  background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
+}
+
+.sec3 {
+  background-image: url(/img/metalicanotext.jpg);
+  background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.glow {
+  color: #fdffa2;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px yellow, 0 0 90px red, 0 0 3px #CDECF3, 0 0 40px #CDECF3, 0 0 50px #CDECF3, 0 0 60px #CDECF3, 0 0 70px blue;
+  }
+  
+  to {
+    text-shadow: 0 0 20px green, 0 0 90px blue, 0 0 4px #CDECF3, 0 0 50px #fdffa2, 0 0 60px #CDECF3, 0 0 7px #fdffa2, 0 0 8px red;
+  }
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(/img/gorillaeyes.jpg);
+ opacity: 90%;
+  overflow-x: hidden;
+  transition: 1s;
+  text-align:right;
+  
+}
+
+.sidenav a {
+  padding: 0px;
+  border-spacing: 10px;
+  font-size: 40pt;
+  color: #fdffa2;
+  display: block;
+  transition: 0.3s;
+
+
+.sidenav a:hover{
+  color: #53BDD5;
+  
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
