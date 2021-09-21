@@ -36,12 +36,35 @@ section {
   scroll-snap-align: start;
 }
 
-.sec1 {
+
+/* Attempt tp make a smaller picture replace the background pic for small screens  */
+.sec1{
+  background-repeat: no-repeat;
+  background-image: url('img/coheedsymbol.png'); 
+  background-size: fit;
+}
+
+
+
+/* For width 400px and larger: */
+@media only screen and (min-width: 400px) {
+.sec1 {  
+  
   background-image: url(/img/Coheed.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
 }
+}
+
+
+
+/* .sec1 {  
+  background-image: url(/img/Coheed.jpg);
+  background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
+} */
 
 .sec2 {
 
