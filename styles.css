@@ -1,8 +1,7 @@
 header {
   position: -webkit-sticky;
   position: sticky;
-  top: 10px;
-
+  top: 5px;
   font-family: "Lobster", cursive;
   font-size: 10pt;
   /* color: #fdffa2; */
@@ -11,6 +10,7 @@ header {
 
 span {
   color: #53BDD5;
+  font-size: 15pt;
 
 }
 
@@ -36,7 +36,7 @@ html {
 }
 
 section {
-  padding-top: 100px;
+  padding-top: 120px;
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
@@ -47,7 +47,7 @@ section {
 /* Attempt tp make a smaller picture replace the background pic for small screens  */
 .sec1{
   background-repeat: no-repeat;
-  background-image: url('img/coheedsymbol.png'); 
+  background-image: url('img/Coheed/blackcoheedstretch.jpg '); 
   background-size: fit;
   color: #fdffa2;
   font-family: "Lobster", cursive;
@@ -58,7 +58,7 @@ section {
 /* For width 400px and larger: */
 @media only screen and (min-width: 400px) {
 .sec1 {  
-  background-image: url(/img/Coheed.jpg);
+  background-image: url(/img/Coheed/194546.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
@@ -75,54 +75,57 @@ section {
 } */
 
 /* Before small view image */
-.sec2 {
-  background-image: url(/img/avengersband.jpg);
+/* .sec2 {
+  background-image: url(/img/Avengers/avengersband.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
-}
+} */
 
-/* adding small view background image
+
 .sec2 {
   background-repeat: no-repeat;
-  background-image: url('img/AVENGER.png'); 
+  background-image: url('img/Avengers/650238_captain-america-shield-wallpapers-wallpapers-zone_1440x900_h.jpg'); 
   background-position:cover;
   
 }
 
 @media only screen and (min-width: 400px) {
-.sec2 {background-image: url(/img/avengersband.jpg);
+.sec2 {background-image: url(/img/Avengers/avengersband.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
 }
-} */
+} 
 
 /* Before small view image */
-.sec3 {
-  background-image: url(/img/metalicanotext.jpg);
+/* .sec3 {
+  background-image: url(/img/Metallica/metalicanotext.jpg);
   background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
+} */
+
+/* picture changes on small view */
+.sec3{
+  background-repeat: no-repeat;
+  background-image: url('img/Metallica/metallicasmallside.jpg'); 
+  background-size: fit;
   color: #fdffa2;
   font-family: "Lobster", cursive;
 }
 
-/* adding small view background image
-
-.sec3 {
-  background-repeat: no-repeat;
-  background-image: url('img/MET.png'); 
-  background-position:center;
-  
 
 
+/* For width 400px and larger: */
 @media only screen and (min-width: 400px) {
-  .sec3 {
-    background-image: url(/img/metalicanotext.jpg);
-    background-size: cover;
-    color: #fdffa2;
-    font-family: "Lobster", cursive;
+.sec3 {  
+  background-image: url(/img/Metallica/metalicanotext.jpg);
+  background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
 }
- */
+}
 
 
 img {
@@ -167,9 +170,8 @@ img {
   font-size: 40pt;
 
 
-.sidenav a:hover{
+.sidenav a:hover {
   color: #53BDD5;
-  
 }
 
 .sidenav .closebtn {
