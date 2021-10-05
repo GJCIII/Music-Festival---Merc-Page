@@ -8,6 +8,12 @@ header {
 
 }
 
+button {
+  color: #53BDD5;
+  float: right;
+  font-weight: bolder;
+}
+
 span {
   color: #53BDD5;
   font-size: 15pt;
@@ -86,6 +92,7 @@ section {
 .sec2 {
   background-repeat: no-repeat;
   background-image: url('img/Avengers/650238_captain-america-shield-wallpapers-wallpapers-zone_1440x900_h.jpg'); 
+  color: #fdffa2;
   background-position:cover;
   
 }
@@ -156,7 +163,7 @@ img {
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: url(/img/gorillaeyes.jpg);
+  background-image: url(/img/spacegorilla.png);
   opacity: 80%;
   overflow-x: hidden;
   transition: 1s;
