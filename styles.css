@@ -5,7 +5,13 @@ header {
 
   font-family: "Lobster", cursive;
   font-size: 10pt;
-  color: #fdffa2;
+  /* color: #fdffa2; */
+
+}
+
+span {
+  color: #53BDD5;
+
 }
 
 hr {
@@ -34,6 +40,7 @@ section {
   height: 100vh;
   width: 100vw;
   scroll-snap-align: start;
+  
 }
 
 
@@ -42,6 +49,8 @@ section {
   background-repeat: no-repeat;
   background-image: url('img/coheedsymbol.png'); 
   background-size: fit;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
 }
 
 
@@ -49,7 +58,6 @@ section {
 /* For width 400px and larger: */
 @media only screen and (min-width: 400px) {
 .sec1 {  
-  
   background-image: url(/img/Coheed.jpg);
   background-size: cover;
   color: #fdffa2;
@@ -58,28 +66,64 @@ section {
 }
 
 
-
-/* .sec1 {  
+/* Before small view image
+.sec1 {  
   background-image: url(/img/Coheed.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
 } */
 
+/* Before small view image */
 .sec2 {
-
   background-image: url(/img/avengersband.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
 }
 
+/* adding small view background image
+.sec2 {
+  background-repeat: no-repeat;
+  background-image: url('img/AVENGER.png'); 
+  background-position:cover;
+  
+}
+
+@media only screen and (min-width: 400px) {
+.sec2 {background-image: url(/img/avengersband.jpg);
+  background-size: cover;
+  color: #fdffa2;
+  font-family: "Lobster", cursive;
+}
+} */
+
+/* Before small view image */
 .sec3 {
   background-image: url(/img/metalicanotext.jpg);
   background-size: cover;
   color: #fdffa2;
   font-family: "Lobster", cursive;
 }
+
+/* adding small view background image
+
+.sec3 {
+  background-repeat: no-repeat;
+  background-image: url('img/MET.png'); 
+  background-position:center;
+  
+
+
+@media only screen and (min-width: 400px) {
+  .sec3 {
+    background-image: url(/img/metalicanotext.jpg);
+    background-size: cover;
+    color: #fdffa2;
+    font-family: "Lobster", cursive;
+}
+ */
+
 
 img {
   width: 100%;
@@ -89,7 +133,7 @@ img {
 
 .glow {
   color: #fdffa2;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: glow .5s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
@@ -110,10 +154,10 @@ img {
   top: 0;
   left: 0;
   background-image: url(/img/gorillaeyes.jpg);
- opacity: 90%;
+  opacity: 80%;
   overflow-x: hidden;
   transition: 1s;
-  text-align:right;
+  text-align:center;
   
 }
 
@@ -121,9 +165,6 @@ img {
   padding: 0px;
   border-spacing: 10px;
   font-size: 40pt;
-  color: #fdffa2;
-  display: block;
-  transition: 0.3s;
 
 
 .sidenav a:hover{
@@ -143,3 +184,5 @@ img {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+
